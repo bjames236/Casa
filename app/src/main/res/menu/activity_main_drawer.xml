@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuProfile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/menuMessage"
+            android:icon="@drawable/ic_messages"
+            android:title="Messages" />
+        <item
+            android:id="@+id/menuAdd"
+            android:icon="@drawable/ic_addlistings"
+            android:title="Add Listing" />
+        <item
+            android:id="@+id/menuView"
+            android:icon="@drawable/ic_viewlistings"
+            android:title="My Listing" />
+
+        <item android:title="General Settings">
+            <menu>
+                <item
+                    android:id="@+id/menuSettings"
+                    android:icon="@drawable/ic_changeprofile"
+                    android:title="Change Profile"/>
+                <item
+                    android:id="@+id/menuSecurity"
+                    android:icon="@drawable/ic_password"
+                    android:title="Change Password"/>
+                <item
+                    android:id="@+id/menuLogout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout"/>
+            </menu>
+        </item>
+    </group>
+</menu>

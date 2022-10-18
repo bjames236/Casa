@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".RegisterUI">
+
+    <RelativeLayout
+        android:id="@+id/loginpanelcardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/loginuipanel">
+
+        <EditText
+            android:id="@+id/rgt_emailAddress"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="E-mail Address"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rgt_password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/rgt_emailAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rgt_confirmpassword"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/rgt_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="confirm password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rgt_phoneNumber"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/rgt_confirmpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_baseline_phonenumber_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rgt_address"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/rgt_phoneNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_baseline_house_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rgt_fullname"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/rgt_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="full Name"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/rgt_fullname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aldrich"
+            android:text="Sign Up"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/rgt_logininstead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/andika"
+            android:text="Login Instead!"
+            android:textColor="#DD2C00"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

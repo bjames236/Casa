@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Desktop/Casa/app/src/main/res/drawable/input_background.xml" value="0.19" />
+        <entry key="..\:/Desktop/Casa/app/src/main/res/layout/activity_home_ui.xml" value="0.358695652173913" />
+        <entry key="..\:/Desktop/Casa/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Desktop/Casa/app/src/main/res/layout/activity_menu_view_listing.xml" value="0.17572463768115942" />
+        <entry key="..\:/Desktop/Casa/app/src/main/res/layout/activity_register_ui.xml" value="0.17572463768115942" />
+        <entry key="..\:/Desktop/Casa/app/src/main/res/layout/app_bar_home_ui.xml" value="0.17572463768115942" />
+        <entry key="..\:/Desktop/Casa/app/src/main/res/layout/content_home_ui.xml" value="0.17572463768115942" />
+        <entry key="..\:/Desktop/Casa/app/src/main/res/layout/nav_header_home_ui.xml" value="0.17572463768115942" />
+        <entry key="..\:/Desktop/Casa/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/ic_baseline_email.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/ic_baseline_security_24.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/ic_viewlistings.xml" value="0.175" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/input_background.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/loginuibg.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/loginuipanel.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/searchbg.xml" value="0.175" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/drawable/side_nav_bar.xml" value="0.175" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_forgot_password_ui.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_home_ui.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_login_ui.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_main.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_change_password.xml" value="0.18614130434782608" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_change_profile.xml" value="0.18614130434782608" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_messages.xml" value="0.18614130434782608" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_my_profile.xml" value="0.18614130434782608" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_view_listing.xml" value="0.18614130434782608" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_messages.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_my_profile.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_register_ui.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/app_bar_home_ui.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/content_home_ui.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/nav_header_home_ui.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/menu/activity_main_drawer.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/menu/home_u_i.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
