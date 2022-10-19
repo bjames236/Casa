@@ -6,7 +6,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.cc17.casa.Model.Users;
 import com.cc17.casa.navigationMenuUI.menuMyProfile;
 import com.cc17.casa.navigationMenuUI.menuMessages;
 import com.cc17.casa.navigationMenuUI.menuAddListing;
@@ -14,6 +17,13 @@ import com.cc17.casa.navigationMenuUI.menuViewListing;
 import com.cc17.casa.navigationMenuUI.menuChangeProfile;
 import com.cc17.casa.navigationMenuUI.menuChangePassword;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -28,6 +38,12 @@ public class HomeUI extends AppCompatActivity implements NavigationView.OnNaviga
 
     private RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
+
+    private FirebaseUser User;
+    private FirebaseAuth Auth;
+    private DatabaseReference databaseReference;
+
+    private String userId = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +64,6 @@ public class HomeUI extends AppCompatActivity implements NavigationView.OnNaviga
         navigationView.setNavigationItemSelectedListener(this);
 
         View headerView = navigationView.getHeaderView(0);
-        TextView nameTextView = headerView.findViewById(R.id.menuProfileName);
-        TextView emailTextView = headerView.findViewById(R.id.menuProfileEmail);
-        ImageView profileImageView = headerView.findViewById(R.id.menuProfileImage);
 
         recyclerView = findViewById(R.id.recycler_menu);
         recyclerView.setHasFixedSize(true);
