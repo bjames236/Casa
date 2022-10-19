@@ -2,8 +2,12 @@ package com.cc17.casa.navigationMenuUI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
+import com.cc17.casa.HomeUI;
 import com.cc17.casa.R;
 
 public class menuChangeProfile extends AppCompatActivity {
@@ -12,5 +16,15 @@ public class menuChangeProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_change_profile);
+
+        ImageButton arrowBack = (ImageButton) findViewById(R.id.arrowback_changProfile);
+        arrowBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(menuChangeProfile.this, HomeUI.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

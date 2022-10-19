@@ -2,8 +2,12 @@ package com.cc17.casa.navigationMenuUI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
+import com.cc17.casa.HomeUI;
 import com.cc17.casa.R;
 
 public class menuViewListing extends AppCompatActivity {
@@ -12,5 +16,14 @@ public class menuViewListing extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_view_listing);
+
+        ImageButton arrowBack = (ImageButton) findViewById(R.id.arrowback_myListing);
+        arrowBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(menuViewListing.this, HomeUI.class);
+                startActivity(intent);
+            }
+        });
     }
 }
