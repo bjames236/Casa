@@ -112,6 +112,8 @@ public class HomeUI extends AppCompatActivity implements NavigationView.OnNaviga
 
         }else if (id == R.id.menuLogout) {
             Intent intent = new Intent(HomeUI.this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            Auth.signOut();
             startActivity(intent);
             finish();
         }
