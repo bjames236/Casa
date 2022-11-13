@@ -38,16 +38,31 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/layout/nav_header_home_ui.xml" value="0.192481884057971" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/menu/activity_main_drawer.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Casa/app/src/main/res/menu/home_u_i.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/drawable/background_left.xml" value="0.1025" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/drawable/background_right.xml" value="0.1025" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/drawable/ic_baseline_add_home.xml" value="0.1025" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/drawable/ic_send_button.xml" value="0.1025" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_chats.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_login_ui.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_add_listing.xml" value="0.11406025824964132" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_add_listing.xml" value="0.2" />
         <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_change_password.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_change_profile.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_messages.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_my_profile.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_menu_view_listing.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_message.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_register_ui.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/nav_header_home_ui.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_view_listing_details.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/activity_view_your_listing_details.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/app_bar_home_ui.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/chat_item_left.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/content_home_ui.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/fragment_chats.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/fragment_users.xml" value="0.21164021164021163" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/houselistinglayout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/layout/nav_header_home_ui.xml" value="0.2" />
+        <entry key="..\:/Users/LGU Bauko/AndroidStudioProjects/Casa/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
       </map>
     </option>
   </component>

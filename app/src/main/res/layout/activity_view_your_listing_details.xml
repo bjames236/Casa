@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewYourListingDetails">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settingsAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settingsSellersForgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/arrowback_Details"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/primary"
+                    android:src="@drawable/ic_arrow_back" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar_settingsAddProduct">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:id="@+id/imageScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ListerImageViews"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/logo" />
+
+                </RelativeLayout>
+
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    &lt;!&ndash;<androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/houseImageRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>&ndash;&gt;
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/logo"/>
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/logo"/>
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/logo"/>
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/logo"/>
+
+                </LinearLayout>-->
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/ListerRentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageScroll"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/input_background"
+                android:fontFamily="casual"
+                android:padding="8dp"
+                android:text="Rent: 00000 per month"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ListerAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ListerRentEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/input_background"
+                android:fontFamily="casual"
+                android:padding="8dp"
+                android:text="Location: Ijay Balay Me"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ListerDescriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ListerAddressEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/input_background"
+                android:fontFamily="casual"
+                android:textSize="20sp"
+                android:text=""
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@id/listerdateandtimeposted"
+        android:layout_marginTop="20dp"
+        android:background="@color/seconday"/>
+
+    <TextView
+        android:id="@+id/listerdateandtimeposted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relative2"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:text="Jan. 1, 2023 : 1:00 am"
+        android:textSize="20sp"
+        android:textColor="@color/seconday" />
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/seconday" />
+
+
+</RelativeLayout>

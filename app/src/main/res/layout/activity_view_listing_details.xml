@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".navigationMenuUI.menuAddListing">
+    tools:context=".ViewListingDetails">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar_settings"
+        android:id="@+id/app_bar_settingsAddProduct"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/primary">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_settings"
+            android:id="@+id/toolbar_settingsSellersForgot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -22,12 +22,11 @@
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:id="@+id/arrowback_addListing"
+                    android:id="@+id/arrowback_Details"
                     android:layout_width="70dp"
                     android:layout_height="50dp"
                     android:background="@color/primary"
-                    android:src="@drawable/ic_arrow_back"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:src="@drawable/ic_arrow_back" />
 
             </RelativeLayout>
 
@@ -35,22 +34,10 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addBoarding"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/primary"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/ic_baseline_add_home"/>
-
     <ScrollView
-        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/app_bar_settings">
+        android:layout_below="@id/app_bar_settingsAddProduct">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -66,7 +53,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:id="@+id/houseImages"
+                        android:id="@+id/ImageViews"
                         android:layout_width="250dp"
                         android:layout_height="250dp"
                         android:layout_marginStart="15dp"
@@ -118,62 +105,51 @@
 
             </HorizontalScrollView>
 
-            <Button
-                android:id="@+id/AddListingImageBTN"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/RentEditText"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imageScroll"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/architects_daughter"
-                android:text="Add Image"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/AddRentEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/AddListingImageBTN"
-                android:layout_centerHorizontal="true"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/input_background"
                 android:fontFamily="casual"
-                android:hint="Input Monthly Rent"
-                android:inputType="number"
                 android:padding="8dp"
+                android:text="Rent: 00000 per month"
+                android:textSize="20sp"
                 android:textColor="@color/black" />
 
-            <EditText
-                android:id="@+id/AddAddressEditText"
+            <TextView
+                android:id="@+id/AddressEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/AddRentEditText"
+                android:layout_below="@id/RentEditText"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/input_background"
                 android:fontFamily="casual"
-                android:hint="Input Address"
-                android:inputType="text"
                 android:padding="8dp"
-                android:textColor="@color/black" />
+                android:text="Location: Ijay Balay Me"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
-            <EditText
-                android:id="@+id/AddDescriptionEditText"
+            <TextView
+                android:id="@+id/DescriptionEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/AddAddressEditText"
+                android:layout_below="@id/AddressEditText"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/input_background"
                 android:fontFamily="casual"
-                android:hint="Input Additional Description........"
+                android:textSize="20sp"
+                android:text=""
                 android:padding="8dp"
                 android:textColor="@color/black" />
 
@@ -181,7 +157,7 @@
                 android:id="@+id/relative"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:layout_below="@id/AddDescriptionEditText"
+                android:layout_below="@id/DescriptionEditText"
                 android:layout_marginTop="20dp"
                 android:background="@color/seconday"/>
 
@@ -199,8 +175,8 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/AddNameInfoEditText"
+            <TextView
+                android:id="@+id/NameInfoEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/information"
@@ -209,42 +185,65 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/input_background"
-                android:clickable="false"
-                android:editable="false"
-                android:focusable="false"
                 android:fontFamily="casual"
-                android:hint="Lister's Name"
+                android:textSize="20sp"
                 android:padding="8dp"
                 android:textColor="@color/black" />
 
-            <EditText
-                android:id="@+id/AddPhoneInfoEditText"
+            <TextView
+                android:id="@+id/PhoneInfoEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/AddNameInfoEditText"
+                android:layout_below="@id/NameInfoEditText"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/input_background"
-                android:clickable="false"
-                android:editable="false"
-                android:focusable="false"
                 android:fontFamily="casual"
-                android:hint="Lister's Phone Number"
+                android:textSize="20sp"
                 android:padding="8dp"
                 android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/messageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PhoneInfoEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/input_background"
+                android:fontFamily="casual"
+                android:text="Message Lister"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateandtimeposted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/messageButton"
+                android:textAlignment="center"
+                android:fontFamily="casual"
+                android:text="Jan. 1, 2023 : 1:00 am"
+                android:textSize="20sp"
+                android:textColor="@color/seconday" />
 
             <RelativeLayout
                 android:id="@+id/relative2"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:layout_below="@id/AddPhoneInfoEditText"
+                android:layout_below="@id/dateandtimeposted"
                 android:background="@color/seconday" />
 
-
         </RelativeLayout>
+
     </ScrollView>
+
 
 </RelativeLayout>
