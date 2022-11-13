@@ -37,42 +37,32 @@
 
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profileImage"
-        android:layout_width="250dp"
-        android:layout_height="200dp"
+        android:id="@+id/profileImageEdit"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
         android:layout_below="@id/app_bar_settings"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/profileChangePicBTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/profileImage"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/aldrich"
-        android:text="Change Profile Picture" />
-
     <EditText
-        android:id="@+id/profileName"
+        android:id="@+id/profileNameEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profileChangePicBTN"
+        android:layout_below="@id/profileImageEdit"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/aldrich"
-        android:text="User Name"
+        android:text="Name"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/profileAddress"
+        android:id="@+id/profileAddressEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profileName"
+        android:layout_below="@id/profileNameEdit"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/aldrich"
@@ -82,24 +72,25 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/profilePhoneNumber"
+        android:id="@+id/profilePhoneNumberEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profileAddress"
+        android:layout_below="@id/profileAddressEdit"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/aldrich"
-        android:text="+639 123 4567 890"
+        android:inputType="number"
+        android:maxLength="11"
+        android:text="00000000000"
         android:textColor="@color/black"
         android:textSize="19sp"
-        android:textStyle="bold"
-        android:inputType="number"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/profileEditSaveBTN"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:layout_below="@id/profilePhoneNumber"
+        android:layout_below="@id/profilePhoneNumberEdit"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/aldrich"
