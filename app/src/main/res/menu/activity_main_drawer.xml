@@ -8,10 +8,10 @@
             android:id="@+id/menuProfile"
             android:icon="@drawable/ic_profile"
             android:title="Profile" />
-        <item
+        <!--<item
             android:id="@+id/menuMessage"
             android:icon="@drawable/ic_messages"
-            android:title="Messages" />
+            android:title="Messages" />-->
         <item
             android:id="@+id/menuAdd"
             android:icon="@drawable/ic_addlistings"

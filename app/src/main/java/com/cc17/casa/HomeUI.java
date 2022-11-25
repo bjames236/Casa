@@ -126,11 +126,11 @@ public class HomeUI extends AppCompatActivity implements NavigationView.OnNaviga
             Intent intent = new Intent(HomeUI.this, menuMyProfile.class);
             startActivity(intent);
 
-        }if (id == R.id.menuMessage) {
-            /*Intent intent = new Intent(HomeUI.this, menuMessages.class);
-            startActivity(intent);*/
+        }/*if (id == R.id.menuMessage) {
+            *//*Intent intent = new Intent(HomeUI.this, menuMessages.class);
+            startActivity(intent);*//*
 
-        }if (id == R.id.menuAdd) {
+        }*/if (id == R.id.menuAdd) {
             Intent intent = new Intent(HomeUI.this, menuAddListing.class);
             startActivity(intent);
 

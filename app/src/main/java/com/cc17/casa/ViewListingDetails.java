@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,7 +29,7 @@ public class ViewListingDetails extends AppCompatActivity {
     private ImageView Picture;
     private String houseID = "";
     private String theuserID = "";
-    private Button messageBTN;
+    private Button messageBTN, callBTN;
 
     private TextView monthlyRentTXT, houseAddressTXT, houseDescriptionTXT, listersNameTXT, listersPhoneNumberTXT, postedTXT;
 
@@ -47,16 +48,6 @@ public class ViewListingDetails extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ViewListingDetails.this, HomeUI.class);
                 startActivity(intent);
-            }
-        });
-
-        messageBTN = (Button) findViewById(R.id.messageButton);
-        messageBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                /*Intent intent = new Intent(ViewListingDetails.this, ChatsActivity.class);
-                intent.putExtra("userId", theuserID);
-                startActivity(intent);*/
             }
         });
 
@@ -96,6 +87,26 @@ public class ViewListingDetails extends AppCompatActivity {
                     if (house.getUserId().equals(User.getUid())){
                         messageBTN.setVisibility(View.INVISIBLE);
                     }
+
+                    messageBTN = (Button) findViewById(R.id.messageButton);
+                    messageBTN.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Uri SendMessage = Uri.parse("smsto:" + house.getHouseContactNumber());
+                            Intent intent = new Intent(Intent.ACTION_SENDTO, SendMessage);
+                            startActivity(intent);
+                        }
+                    });
+
+                    callBTN = (Button) findViewById(R.id.callButton);
+                    callBTN.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", house.getHouseContactNumber(), null));
+                            startActivity(intent);
+                        }
+                    });
+
                 }
             }
 
